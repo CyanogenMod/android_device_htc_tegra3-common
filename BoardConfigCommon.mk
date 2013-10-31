@@ -20,7 +20,11 @@ BOARD_SKIP_ANDROID_DOC_BUILD := true
 # Audio
 BOARD_USES_GENERIC_AUDIO := false
 BOARD_USES_ALSA_AUDIO := false
-COMMON_GLOBAL_CFLAGS += -DICS_AUDIO_BLOB
+
+# Sense 4.5 / Sense 5 audio.primary blob support. See: include/hardware/audio.h 
+COMMON_GLOBAL_CFLAGS += -DHTC_TEGRA_AUDIO
+# Uncomment if you want try the Sense 5 audio_policy
+# COMMON_GLOBAL_CFLAGS += -DMR1_AUDIO_BLOB 
 
 #Camera
 USE_CAMERA_STUB := false
