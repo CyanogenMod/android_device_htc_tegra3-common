@@ -76,9 +76,6 @@ BOARD_VOLD_MAX_PARTITIONS := 22
 BOARD_HAS_SDCARD_INTERNAL := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/f_mass_storage/lun0/file"
 
-# HTC specific
-BOARD_USE_NEW_LIBRIL_HTC := true
-
 # HTCLOG
 COMMON_GLOBAL_CFLAGS += -DHTCLOG
 
