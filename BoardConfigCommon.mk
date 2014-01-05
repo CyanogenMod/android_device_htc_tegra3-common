@@ -64,7 +64,6 @@ ENABLE_WEBGL := true
 
 # EGL settings
 USE_OPENGL_RENDERER := true
-BOARD_EGL_NEEDS_LEGACY_FB := true
 BOARD_EGL_CFG := device/htc/tegra3-common/configs/egl.cfg
 
 # BT
